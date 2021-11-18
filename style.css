@@ -103,7 +103,7 @@
 }
 
 .lead__subtitle {
-  width: 570px;
+  max-width: 570px;
   margin: 0 0 90px;
   font-size: 18px;
   font-weight: 700;
@@ -186,7 +186,7 @@
 }
 
 .about__description {
-  width: 840px;
+  max-width: 840px;
   text-align: center;
   font-weight: 400;
 }
@@ -223,17 +223,17 @@
 }
 
 .rules__container {
-  padding: 100px 0;
+  padding: 100px 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-image: url("./images/bg-grid.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 100%;
+  background-position: 0 140%;
 }
 
 .rules__title {
-  margin-top: 80px;
   font-size: 26px;
   font-weight: 900;
 }
@@ -280,4 +280,95 @@
 .footer__link:after,
 .footer__link:hover:after {
   background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__title {
+    padding-top: 30px;
+    font-size: 75px;
+    text-align: center;
+  }
+
+  .lead__subtitle {
+    max-width: 500px;
+    margin: 0 auto 130px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .lead__container {
+    background-size: 350px 350px;
+    background-position: 95% 95%;
+  }
+
+  .lead__btn {
+    margin: 0 auto;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .header__nav {
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-top: 50px;
+  }
+
+  .rules__container {
+    flex-direction: column;
+    background-size: 70%;
+    background-position: 100% 5%;  
+  }
+
+  .rules__title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .rules__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rules__image {
+    margin: 50px auto 0;
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer__nav {
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
