@@ -1,0 +1,283 @@
+@import url(./fonts/Montserrat/stylesheet.css);
+
+.page {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.header__container,
+.lead__container,
+.about__container,
+.buy__container,
+.rules__container,
+.footer__container {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  height: 56px;
+  background-color: #ffbf69;
+}
+
+.header__nav {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+}
+
+.header__item {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.header__item_type_logo {
+  text-align: left;
+  flex-grow: 8;
+}
+
+.header__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: 0.5s;
+  position: relative;
+}
+
+.link-hover:after {
+	content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  transition: width 0.5s;
+}
+
+.link-hover:hover:after {
+	content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  transition: width 0.5s;
+}
+
+.header__link:after,
+.header__link:hover:after {
+  background-color: black;
+}
+
+.lead {
+  height: 600px;
+  color: #ffffff;
+  background-color: #ffbf69;
+}
+
+.lead__container {
+  background-image: url("./images/lead.png");
+  background-repeat: no-repeat;
+  background-size: 550px 550px;
+  background-position: 90% 70%;
+}
+
+.lead__title {
+  margin: 0;
+  padding: 100px 0 0;
+  font-size: 140px;
+  font-weight: 900;
+}
+
+.lead__subtitle {
+  width: 570px;
+  margin: 0 0 90px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.lead__btn,
+.card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.lead__btn {
+  font-size: 28px;
+  width: 250px;
+  height: 65px;
+  background-color: #cbf3f0;
+}
+
+.card__btn {
+  width: 130px;
+  height: 40px;
+  background-color: #ffbf69;
+  font-size: 16px;
+}
+
+.btn-hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 3px;
+  background-color: #ffffff;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 2px;
+  background-color: #000000;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-hover:hover::before,
+.btn-hover:hover::after {
+  height: 100%;
+}
+
+.lead__image {
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.about {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__title,
+.buy__title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.about__description {
+  width: 840px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.buy {
+  background-color: #cbf3f0;
+  padding: 100px 0;
+}
+
+.cards {
+  max-width: 1000px;
+  list-style-type: none;
+  padding: 0;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.card__image {
+  width: 150px;
+  height: 150px;
+}
+
+.rules__container {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("./images/bg-grid.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 100%;
+}
+
+.rules__title {
+  margin-top: 80px;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.rules__description {
+  font-weight: 400;
+  margin-right: 85px;
+}
+
+.rules__image {
+  width: 450px;
+  height: 350px;
+}
+
+.footer {
+  height: 100px;
+  background-color: #333333;
+}
+
+.footer__nav {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.footer__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  transition: 0.5s;
+  position: relative;
+}
+
+.footer__item_type_logo .footer__link {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer__link:after,
+.footer__link:hover:after {
+  background-color: #fff;
+}
